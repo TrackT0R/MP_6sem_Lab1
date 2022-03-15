@@ -29,12 +29,13 @@ namespace Lab1
 
         public T Pop()
         {
-            return _items[Count--];
+            Count--;
+            return _items[Count];
         }
 
         public T Peek()
         {
-            return _items[Count];
+            return _items[Count-1];
         }
 
         public bool Contains(T elem)
